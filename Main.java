@@ -51,6 +51,8 @@ public class Main {
 		group1.removeStudentByID(258);
 		group1.removeStudentByID(491); // Не существует
 
+		// (ВНИЗУ) sortStudentsByLastName, создание студента
+
 		System.out.println();
 		System.out.println("Создание нового студента:");
 		System.out.println();

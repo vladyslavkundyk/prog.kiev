@@ -6,7 +6,7 @@ import java.util.Comparator;
 public class Group {
 
 	private String groupName;
-	Student[] students;
+	private Student[] students;
 
 	public Group() {
 		super();
@@ -73,9 +73,9 @@ public class Group {
 		return false;
 	}
 
-	//Метод сортировки массива студентов по фамилии
+	// Метод сортировки массива студентов по фамилии
 	public void sortStudentsByLastName() {
-		Arrays.sort(students, Comparator.nullsLast(new StudentsLastNameComparator()));
+		Arrays.sort(students, Comparator.nullsFirst(new StudentsLastNameComparator()));
 	}
 
 	@Override
